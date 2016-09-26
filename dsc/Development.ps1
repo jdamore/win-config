@@ -16,7 +16,8 @@
             "chocolatey",
             "googlechrome",
             "git",
-            "sublimetext3"
+            "sublimetext3",
+            "vlc"
         )
         DependsOn = "[cChocoInstaller]init"
     }

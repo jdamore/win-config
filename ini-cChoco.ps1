@@ -21,6 +21,6 @@ if (!(Test-Path $env:ProgramFiles\WindowsPowerShell\Modules\cChoco)) {
 }
 
 else {
-    Write-Host "DSC ResourcecChoco already installed"
+    Write-Host "DSC Resource Choco already installed"
     Get-DscResource cChoco*
 }
