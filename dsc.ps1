@@ -11,7 +11,7 @@ if (Test-Path "$currDir\$dscConfiguration") {
     Remove-Item -Force -Recurse "$currDir\$dscConfiguration"
 }
 
-& "$currDir\dsc\$dscConfiguration.ps1"
+. "$currDir\dsc\$dscConfiguration.ps1"
 & "$dscConfiguration"
 
 Start-DscConfiguration -Force -Wait -ComputerName localhost -Path "$currDir\$dscConfiguration"
